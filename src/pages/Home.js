@@ -33,7 +33,6 @@ const Home = () => {
       <RecommendedRecipe />
       <BestRecipes />
       <MoreRecipes />
-
     </div>
   );
 };
