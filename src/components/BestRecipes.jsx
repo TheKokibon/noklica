@@ -24,9 +24,9 @@ const BestRecipes = () => {
 
   return (
     <div>
-        <h1 className='text-[#cab88d] text-center p-4 m-4 text-2xl font-bold  '>Najomiljeniji recepti</h1>
+        <h1 className='text-[black] text-center p-4 m-4 text-2xl font-bold  '>Izdvojeno</h1>
 <div className="relative w-full max-w-4xl mx-auto p-6 m-10">
-      <div className="relative h-96 overflow-hidden rounded-xl shadow-lg">
+      <div className="relative h-96 overflow-hidden rounded-lg shadow-lg">
         {images.map((image, index) => (
           <div
             key={index}
@@ -46,10 +46,10 @@ const BestRecipes = () => {
         ))}
       </div>
       <div className="flex justify-between mt-4">
-        <button onClick={handlePrevClick} className="px-4  py-2 text-white bg-[#cab88d] rounded-lg hover:bg-[#8d8663]">
+        <button onClick={handlePrevClick} className="px-4  py-2 text-white bg-[black] rounded-lg hover:bg-[#B6B6B4]">
           <ArrowLeft />
         </button>
-        <button onClick={handleNextClick} className="px-4 py-2 text-white bg-[#cab88d] rounded-lg hover:bg-[#8d8663]">
+        <button onClick={handleNextClick} className="px-4  py-2 text-white bg-[black] rounded-lg hover:bg-[#B6B6B4]">
           <ArrowRight />
         </button>
       </div>

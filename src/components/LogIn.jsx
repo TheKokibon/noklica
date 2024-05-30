@@ -32,12 +32,12 @@ const LogIn = () => {
     
   return (
     <div className='flex items-center justify-center h-screen'>
-      <div className='flex flex-col items-center justify-center p-4 m-4 w-full max-w-md bg-[#cab88d] rounded-xl'>
+      <div className='flex flex-col items-center justify-center p-4 m-4 w-full max-w-md shadow-lg border-2 border-black rounded-xl'>
         <img src={Logo} alt="" className='w-1/2 h-fit'/>
         <h1 className='text-center text-2xl font-bold mb-4'>Log in stranica</h1>
         <input type="text" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} className='w-full p-2 mb-4 border rounded' />
         <input type="password" placeholder='Šifra' value={password} onChange={(e) => setPassword(e.target.value)} className='w-full p-2 mb-4 border rounded' />
-        <button onClick={handleLogin} className="bg-white text-[#cab88d]  rounded-md p-2 mt-2 font-semibold hover:bg-[#fffcec]">
+        <button onClick={handleLogin} className="bg-black text-[white]  rounded-md p-2 mt-2 font-semibold hover:bg-[#B6B6B4]">
           Prijava
         </button>
       </div>

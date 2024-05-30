@@ -15,7 +15,7 @@ const SearchByCategory = ({ activeCategory, onCategoryChange }) => {
           key={category.name}
           onClick={() => onCategoryChange(category.name)}
           className={`flex  items-center space-x-1 w-30 h-16 p-4 rounded-lg cursor-pointer 
-            ${activeCategory === category.name ? 'bg-[#8d8663]' : 'bg-[#cab88d]'} text-white hover:bg-[#8d8663]`}
+            ${activeCategory === category.name ? 'bg-[#2C3539]' : 'bg-[black]'} text-white hover:bg-[#2C3539]`}
         >
           {category.icon}
           <span className='mx-auto'>{category.name}</span>

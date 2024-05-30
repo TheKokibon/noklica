@@ -6,6 +6,7 @@ import MoreRecipes from '../components/MoreRecipes';
   import BestRecipes from '../components/BestRecipes';
 import { supabase } from '../util/createClient.js';
 
+
 const Home = () => {
   // eslint-disable-next-line
   const [recipes, setRecipes] = useState([]);

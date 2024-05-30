@@ -6,7 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Comfortaa', sans-serif;
+  font-family: 'Albert Sans', sans-serif;
 
 }
 
@@ -18,6 +18,6 @@ body{
   box-sizing: border-box;
 }
 
-.font-comfortaa {
-  font-family: 'Comfortaa', sans-serif;
+.font-albert {
+  font-family: 'Albert Sans', sans-serif;
 }

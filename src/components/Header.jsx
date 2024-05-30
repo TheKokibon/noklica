@@ -27,21 +27,25 @@ const Header = () => {
     }, [nav]);
 
     return (
-        <div className='flex justify-between items-center h-24 w-full mx-auto px-4 text-[#cab88d] bg-[#fff] border-b border-b-[#8d8663]'>
+        <div className='flex justify-between items-center h-24 w-full mx-auto px-4 text-[black] bg-[#FFFFFF] border-b border-b-[#B6B6B4]'>
            <Link to="/">
-           <img src={logo} alt="logo" className='h-12 w-12 ' />
+            <div className='flex flex-row justify-center items-center'>
+            <img src={logo} alt="logo" className='h-12 w-12 ' />
+           <h1 className='hover:text-[#B6B6B4]'>Noklica</h1>
+            </div>
+          
            </Link> 
             <ul className='hidden md:flex'>
-                <li className='px-4 hover:text-[#8d8663]'>
+                <li className='px-4 hover:text-[#B6B6B4]'>
                     <Link to="/">Početna</Link>
                 </li>
-                <li className='px-4 hover:text-[#8d8663]'>
+                <li className='px-4 hover:text-[#B6B6B4]'>
                     <Link to="/recepti">Recepti</Link>
                 </li>
-                <li className='px-4 hover:text-[#8d8663]'>
+                <li className='px-4 hover:text-[#B6B6B4]'>
                     <Link to="/o-meni">O meni</Link>
                 </li>
-                <li className='px-4 hover:text-[#8d8663]'>
+                <li className='px-4 hover:text-[#B6B6B4]'>
                     <Link to="/kontakt">Kontakt</Link>
                 </li>
             </ul>
@@ -50,21 +54,24 @@ const Header = () => {
                 {nav ? <X size={30} /> : <Menu size={30} />}
             </div>
 
-            <div className={`z-20 fixed left-0 top-0 w-1/2 h-full border-r border-r-[#b14c4c] bg-[white] ease-in-out duration-500 ${nav ? 'translate-x-0' : '-translate-x-full'}`}>
+            <div className={`z-20 fixed left-0 top-0 w-1/2 h-full border-r border-r-[black] bg-[#FAF6F0] ease-in-out duration-500 ${nav ? 'translate-x-0' : '-translate-x-full'}`}>
                <Link to="/">
-               <img src={logo} alt="logo" className='h-12 w-12 m-7 ' />
+               <div className='flex flex-row justify-left m-5 items-center'>
+            <img src={logo} alt="logo" className='h-12 w-12 ' />
+           <h1 className='hover:text-[#B6B6B4]'>Noklica</h1>
+            </div>
                </Link> 
                 <ul className='p-4 '>
-                    <li className='p-4 border-b border-b-[#b14c4c] hover:text-[#8d8663]'>
+                    <li className='p-4 border-b border-b-[black] hover:text-[#B6B6B4]'>
                         <Link to="/" onClick={handleNav}>Početna</Link>
                     </li>
-                    <li className='p-4 border-b border-b-[#b14c4c] hover:text-[#8d8663]'>
+                    <li className='p-4 border-b border-b-[black] hover:text-[#B6B6B4]'>
                         <Link to="/recepti" onClick={handleNav}>Recepti</Link>
                     </li>
-                    <li className='p-4 border-b border-b-[#b14c4c] hover:text-[#8d8663]'>
+                    <li className='p-4 border-b border-b-[black] hover:text-[#B6B6B4]'>
                         <Link to="/o-meni" onClick={handleNav}>O meni</Link>
                     </li>
-                    <li className='p-4 border-b border-b-[#b14c4c] hover:text-[#8d8663]'>
+                    <li className='p-4 border-b border-b-[black] hover:text-[#B6B6B4]'>
                         <Link to="/kontakt" onClick={handleNav}>Kontakt</Link>
                     </li>
                 </ul>

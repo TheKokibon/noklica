@@ -17,8 +17,8 @@ const ReceptiAdmin = () => {
     <div>
       <RecipesPage />
       
-      <div className='flex justify-center'>
-        <button onClick={toggleAddRecipeForm} className='w-96 h-96 p-2 m-2 rounded-xl shadow-lg bg-[#cab88d] text-white text-xl font-bold hover:bg-[#8d8663]'>
+      <div className='flex justify-center p-4 m-4'>
+        <button onClick={toggleAddRecipeForm} className='w-96 h-96 p-2 m-2 rounded-xl  bg-[white] text-black shadow-lg shadow-black text-xl font-bold hover:bg-[#B6B6B4]'>
           Dodaj recept
         </button>
       </div>

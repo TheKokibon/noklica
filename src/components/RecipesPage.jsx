@@ -57,14 +57,14 @@ const RecipesPage = () => {
 
   return (
     <div>
-      <h1 className='text-center text-[#cab88d] text-2xl font-bold p-2'>Recepti</h1>
+      <h1 className='text-center text-[black] text-2xl font-bold p-2'>Recepti</h1>
       <div className='flex flex-col md:flex-row justify-center p-2 m-2 border-b border-b-[#8d8663]'>
         <div className='flex flex-col justify-center text-center md:border-r border-r-[#8d8663]'>
-          <h1 className='text-[#cab88d] font-semibold'>Pretraga po imenu</h1>
+          <h1 className='text-[black] font-semibold  text-lg'>Pretraga po imenu</h1>
           <SearchOfRecipes onSearchChange={setSearchQuery} />
         </div>
         <div className='flex flex-col items-center md:justify-center text-center'>
-          <h1 className='text-[#cab88d] font-semibold'>Pretraga po kategoriji</h1>
+          <h1 className='text-[black] font-semibold text-lg'>Pretraga po kategoriji</h1>
           <SearchByCategory activeCategory={activeCategory} onCategoryChange={setActiveCategory} />
         </div>
       </div>

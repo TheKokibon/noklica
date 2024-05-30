@@ -52,25 +52,25 @@ const AddRecipeForm = () => {
 
 
   return (
-    <form onSubmit={handleSubmit} className='bg-[#cab88d] w-5/6 md:w-1/2 flex flex-col justify-center shadow-lg items-center p-6 m-5  mx-auto  rounded-xl'>
-        <h1 className='text-center text-2xl p-2 m-2 font-bold text-white'>Forma za recept</h1>
-        <input type="text" name="naziv" placeholder="Naziv recepta" value={recipeData.naziv} onChange={handleChange} className='p-2 m-2 rounded-lg text-black outline outline-[#cab88d] w-1/2'/>
+    <form onSubmit={handleSubmit} className='bg-[white] w-5/6 md:w-1/2 flex flex-col justify-center shadow-lg shadow-black items-center p-6 m-5  mx-auto  rounded-xl'>
+        <h1 className='text-center text-2xl p-2 m-2 font-bold text-black'>Forma za recept</h1>
+        <input type="text" name="naziv" placeholder="Naziv recepta" value={recipeData.naziv} onChange={handleChange} className='p-2 m-2 rounded-lg text-black outline outline-[black] w-1/2'/>
       
-        <textarea name="sastojci" placeholder="Sastojci" value={recipeData.sastojci} onChange={handleChange} className='p-2 m-2 rounded-lg text-black outline outline-[#cab88d] w-1/2'/>
+        <textarea name="sastojci" placeholder="Sastojci" value={recipeData.sastojci} onChange={handleChange} className='p-2 m-2 rounded-lg text-black outline outline-[black] w-1/2'/>
       
-        <textarea name="prica" placeholder="Priča recepta" value={recipeData.prica} onChange={handleChange} className='p-2 m-2 rounded-lg text-black outline outline-[#cab88d] w-1/2'/>
+        <textarea name="prica" placeholder="Priča recepta" value={recipeData.prica} onChange={handleChange} className='p-2 m-2 rounded-lg text-black outline outline-[black] w-1/2'/>
       
-        <input type="text" name="slika" placeholder='Url slike' value={recipeData.slika} onChange={handleChange} className='p-2 m-2 rounded-lg text-black outline outline-[#cab88d] w-1/2'/>
+        <input type="text" name="slika" placeholder='Url slike' value={recipeData.slika} onChange={handleChange} className='p-2 m-2 rounded-lg text-black outline outline-[black] w-1/2'/>
     
-        <input type="text" name="kategorija" placeholder= "Kategorija(slano ili slatko)" value={recipeData.kategorija} onChange={handleChange} className='p-2 m-2 rounded-lg text-black outline outline-[#cab88d] w-1/2'/>
+        <input type="text" name="kategorija" placeholder= "Kategorija(slano ili slatko)" value={recipeData.kategorija} onChange={handleChange} className='p-2 m-2 rounded-lg text-black outline outline-[black] w-1/2'/>
      
-        <input type="text" name="tezina" placeholder = "Težina(lako,srednje, teško)" value={recipeData.tezina} onChange={handleChange} className='p-2 m-2 rounded-lg text-black outline outline-[#cab88d] w-1/2'/>
+        <input type="text" name="tezina" placeholder = "Težina(lako,srednje, teško)" value={recipeData.tezina} onChange={handleChange} className='p-2 m-2 rounded-lg text-black outline outline-[black] w-1/2'/>
  
-        <input type="number" name="cena" placeholder="Cena(U rsd)" value={recipeData.cena} onChange={handleChange} className='p-2 m-2 rounded-lg text-black outline outline-[#cab88d] w-1/2'/>
+        <input type="number" name="cena" placeholder="Cena(U rsd)" value={recipeData.cena} onChange={handleChange} className='p-2 m-2 rounded-lg text-black outline outline-[black] w-1/2'/>
       
-        <input type="number" name="vreme" placeholder="Vreme(u minutima)" value={recipeData.vreme} onChange={handleChange} className='p-2 m-2 rounded-lg text-black outline outline-[#cab88d] w-1/2'/>
+        <input type="number" name="vreme" placeholder="Vreme(u minutima)" value={recipeData.vreme} onChange={handleChange} className='p-2 m-2 rounded-lg text-black outline outline-[black] w-1/2'/>
   
-        <button type="submit" className='bg-white text-[#cab88d] w-fit rounded-md p-2 m-4 mt-2 font-semibold hover:bg-[#fffcec]'>Dodaj</button>
+        <button type="submit" className='bg-black text-[white] w-fit rounded-md p-2 m-4 mt-2 font-semibold hover:bg-[#B6B6B4]'>Dodaj</button>
    
     </form>
   );
