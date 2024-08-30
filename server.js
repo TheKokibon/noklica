@@ -10,11 +10,11 @@ app.use(express.json());
 
 const supabase = createClient(
   'https://glbcekittgbetvjwyuuh.supabase.co', // Replace with your correct Supabase URL
-  ''
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdsYmNla2l0dGdiZXR2and5dXVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTYzODA2MTAsImV4cCI6MjAzMTk1NjYxMH0.PbSmfl3miGYuPUL8Dra0-s3tRs1CyWIQhrWP7VuTYPg'
 );
 
 
-//sgMail.setApiKey('');
+sgMail.setApiKey('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');
 
 
 app.post('/api/subscribe', async (req, res) => {
