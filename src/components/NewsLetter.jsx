@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 
 const NewsLetter = () => {
@@ -27,7 +28,7 @@ const NewsLetter = () => {
   return (
     <div className='flex flex-col text-center self-center text-[black] h-fit shadow-lg shadow-slate-950 bg-[white] rounded-md w-full lg:w-1/2 m-auto p-4'>
       <h1 className='text-2xl font-bold mb-4'>Newsletter</h1>
-      <p>Subscribe to our newsletter and be notified whenever we post a new recipe</p>
+      <p>Prijavite se da bi dobili obaveštenje za svaki novi recept</p>
       <form onSubmit={handleSubmit} className='flex flex-col sm:flex-row justify-center m-2 p-2 items-center space-y-2 sm:space-y-0 sm:space-x-2'>
         <label htmlFor="email" className='text-left w-full sm:w-auto'>Email</label>
         <input

@@ -15,13 +15,13 @@ const Footer = () => {
     <div>
       <div className='flex bottom-0 flex-wrap md:flex-col w-full h-min bg-white text-[black] p-6 border-t border-t-[#B6B6B4]'>
         <div className='flex justify-between gap-10 md:gap-44 items-center max-w-screen-xl mx-auto'>
-          {/* Logo and Company Name */}
+         
           <div className='flex flex-col items-center w-1/3'>
             <img src={logo} alt="logo" className='w-16 h-16 md:w-24 md:h-24' />
             <h2 className='mt-2 font-bold text-md md:text-lg'>Noklica</h2>
           </div>
 
-          {/* Navigation Links */}
+        
           <div className='flex flex-col items-center w-1/3'>
             <h2 className='mb-1 font-bold text-md md:text-lg text-center'>Stranice</h2>
             <ul className='flex flex-col md:flex'>
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Rights Statement */}
+        
       </div>
       <h2 className='text-center md:text-center mt-4 text-md md:text-lg text-[black]'>&copy; 2024 TheKokibon. All rights reserved.</h2>
     </div>

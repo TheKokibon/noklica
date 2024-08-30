@@ -48,6 +48,11 @@ const Header = () => {
                 <li className='px-4 hover:text-[#B6B6B4]'>
                     <Link to="/kontakt">Kontakt</Link>
                 </li>
+
+                <li className='bg-[black] px-4 hover:text-[#B6B6B4] text-white rounded-lg'>
+                    <Link to="/login">Prijavi se</Link>
+                </li>
+                
             </ul>
 
             <div onClick={handleNav} className='block md:hidden'>
@@ -73,6 +78,9 @@ const Header = () => {
                     </li>
                     <li className='p-4 border-b border-b-[black] hover:text-[#B6B6B4]'>
                         <Link to="/kontakt" onClick={handleNav}>Kontakt</Link>
+                    </li>
+                    <li className='p-4 border-b border-b-[black] hover:text-[#B6B6B4]'>
+                        <Link to="/login" onClick={handleNav}>Prijavi se </Link>
                     </li>
                 </ul>
             </div>

@@ -10,6 +10,7 @@ import Login from './pages/Login';
 import ReceptiAdmin from './pages/ReceptiAdmin';
 import { supabase } from './util/createClient';
 import Recept from './pages/Recept';
+import Registration from './components/Registration';
 
 
 
@@ -44,6 +45,7 @@ const App = () => {
         <Route path="/o-meni" element={<Omeni />} />
         <Route path="/kontakt" element={<Kontakt />} />
         <Route path="/login" element={<Login />} />
+        <Route path ="/registration" element={<Registration/>}/>
         <Route path="/recepti/:nazivRecepta" element={<Recept/>}/>
          {user ? (
           <Route path="/recepti/admin" element={<ReceptiAdmin />} />
