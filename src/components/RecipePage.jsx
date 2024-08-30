@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 const RecipePage = () => {
     
     const {nazivRecepta} = useParams();
+    const decodedNazivRecepta = decodeURIComponent(nazivRecepta);
 
     const [recipe, setRecipe] = useState(null);
     const[loading, setLoading] = useState(true);
@@ -17,7 +18,7 @@ const RecipePage = () => {
         async function fetchRecipe(){
             try{
                 setLoading(true);
-                const {data,error} = await supabase.from("recepti").select("*").eq("naziv", nazivRecepta).single();
+                const {data,error} = await supabase.from("recepti").select("*").eq("naziv", decodedNazivRecepta).single();
 
                 if(error) {
                     throw error;
@@ -31,7 +32,7 @@ const RecipePage = () => {
             }
         }
         fetchRecipe();
-    }, [nazivRecepta])
+    }, [decodedNazivRecepta])
 
     if(loading){
        return <Loading/>
@@ -48,7 +49,7 @@ const RecipePage = () => {
         <h1 className='text-center font-bold text-[black] text-2xl m-2 p-2'>{naziv}</h1>
         <img src={slika} alt="nesto" className='w-fit h-auto md:h-96 p-2 m-2 rounded-2xl self-center'/>
         <div className='flex flex-col md:flex-row  items-center md:justify-center'>
-        <div className='w-5/6  sm:w-1/2 md:w-1/3 lg:w-1/4 bg-[white] text-black   shadow-lg shadow-black h-fit flex flex-col p-2 m-2 rounded-xl'>
+        <div className='w-5/6  sm:w-1/2 md:w-1/3 lg:w-1/4 bg-[white] text-black   shadow-lg shadow-black h-96 flex flex-col p-2 m-2 rounded-xl'>
         <h2 className=' text-center font-bold text-xl'>Sastojci</h2>
         <pre className="text-black font-albert text-sm md:text-md ">{sastojci}</pre>
          </div>

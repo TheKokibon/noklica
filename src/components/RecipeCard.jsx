@@ -12,7 +12,7 @@ const RecipeCard = ({ id, slika, naziv, onDelete }) => {
 
   return (
     <div className='flex flex-col bg-[white]  w-96 h-96 p-1 m-2 rounded-xl shadow-lg shadow-black overflow-hidden'>
-    <Link to={`/recepti/${naziv}`}>
+    <Link to={`/recepti/${encodeURIComponent(naziv)}`}>
       <div className="group relative">
         <img src={slika} alt={naziv} className='w-full h-64 p-1 object-cover rounded-t-xl' />
         <div className="absolute inset-0 bg-[black] opacity-0 group-hover:opacity-80 flex justify-center items-center rounded-t-xl transition-opacity">

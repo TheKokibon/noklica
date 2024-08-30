@@ -5,6 +5,7 @@ import RecommendedRecipe from '../components/RecommendedRecipe';
 import MoreRecipes from '../components/MoreRecipes';
   import BestRecipes from '../components/BestRecipes';
 import { supabase } from '../util/createClient.js';
+import NewsLetter from '../components/NewsLetter.jsx';
 
 
 const Home = () => {
@@ -33,7 +34,9 @@ const Home = () => {
       <Hero />
       <RecommendedRecipe />
       <BestRecipes />
+      <NewsLetter/>
       <MoreRecipes />
+      
     </div>
   );
 };
