@@ -14,7 +14,7 @@ const supabase = createClient(
 );
 
 
-sgMail.setApiKey('');
+//sgMail.setApiKey('');
 
 
 app.post('/api/subscribe', async (req, res) => {
